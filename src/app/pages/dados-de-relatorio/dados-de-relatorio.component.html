@@ -1,0 +1,117 @@
+
+<!-- TABELA MAIOR -->
+<section id="table-devolutiva">
+<table class="table-d">
+
+  <thead>
+<tr>
+<th>Dados do cliente</th>
+<th></th>
+<th class="botao" *ngIf="canShow3"><button (click)="changeCanShow3()"  data-tooltip="Esconder" data-flow="top"><fa-icon class="ico-tabela" [icon]=" faCircleChevronUp"></fa-icon></button></th>
+<th *ngIf="canShow3 == false" class="botao"><button (click)="changeCanShow3()"  data-tooltip="Expandir" data-flow="top"><fa-icon class="ico-tabela" [icon]=" faCircleChevronDown"></fa-icon></button></th>
+</tr>
+</thead>
+
+<tbody *ngIf="canShow3">
+<tr>
+<td class="tb"><h3>Nome</h3>Roberta Nascimento de Jesus</td>
+<td class="tb"><h3>CPF</h3>221.829.222-00</td>
+<td class="tb"><h3>RG</h3>29.282.222-0</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Data de nascimento</h3>11/09/1981</td>
+<td class="tb"><h3>CEP</h3>11014-90</td>
+<td class="tb"><h3></h3></td>
+</tr>
+
+<tr>
+<td class="tb"></td>
+<td class="tb"></td>
+<td class="tb"><h3>Idade</h3>33 anos</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Estado civil</h3>Casada</td>
+<td class="tb"><h3>UF</h3>São Paulo</td>
+<td class="tb"><h3>Sexo</h3>Feminino</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Nome do cônjuge</h3>Luiz Carlos de Moura</td>
+<td class="tb"><h3>Cidade</h3>São Caetano do Sul</td>
+<td class="tb"><h3>Bairro</h3>Vila Mathias</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Telefone contato 1</h3>(11) 3233-3323</td>
+<td class="tb"><h3>Telefone contato 2</h3>(11) 3399-3323</td>
+<td class="tb"><h3>Celular</h3>(11) 99877-9854</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Email</h3>(11) 3233-3323</td>
+<td class="tb"><h3>Permite enviar SMS</h3><input type="radio" checked>Sim&nbsp;<input type="radio" disabled>Não</td>
+<td class="tb"><h3>Fax</h3>(11) 3232-9854</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Profissão</h3>Coordenador Gestão Empresarial</td>
+<td class="tb"><h3>Especifique a ocupação</h3>Coordenador de área</td>
+<td class="tb"><h3>Faixa salarial</h3>(11) 7.500,00</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>CRM</h3>12233-66</td>
+<td class="tb"><h3>UF CRM</h3>São Paulo</td>
+<td class="tb"></td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Residente</h3><input type="radio" checked>Sim &nbsp;<input type="radio" disabled>Não</td>
+<td class="tb"><h3>País de origem</h3>Brasil</td>
+<td class="tb"></td>
+</tr>
+
+<tr class="ajuste">
+<td class="tb"><h3>Peso</h3>88</td>
+<td class="tb"><h3>Altura</h3>1,87</td>
+<td class="tb"><h3>IMC</h3>22</td>
+</tr>
+</tbody>
+</table>
+
+<section id="table-w">
+<table class="table-d">
+<tr class="tr-d">
+<th>Dados da proposta</th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<td class="tb"><h3>Tipo de proposta</h3>Previcência Individual</td>
+<td class="tb"><h3>N° da proposta</h3>GF22/0001</td>
+<td class="tb"><h3>N. Caixa arquivo</h3>1108</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Data ER</h3>22/08/2022</td>
+<td class="tb"><h3>Data Assinatura</h3>22/09/2022</td>
+<td class="tb"><h3>Valor</h3>44.000,00</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Produto</h3>Prev</td>
+<td class="tb"><h3>Cobertura</h3>-</td>
+<td class="tb"><h3>Código de venda</h3>3332</td>
+</tr>
+
+<tr>
+<td class="tb"><h3>Corretor líder</h3>Luiza Carvalho</td>
+<td class="tb"><h3>Estipulante</h3>Roberta Nascimento de Souza</td>
+<td class="tb"><h3>Agenciador</h3>Mario Andrade José</td>
+</tr>
+
+</table>
+</section>

@@ -1,0 +1,204 @@
+/*-- FONTES --*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+/*--Sessão verde--*/
+
+#filtro-green{
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-bottom: 35px;
+  height: 74px;
+  background-color: #E5F8FF;
+  color: #102B52;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+h4 {
+  font-family: 'Montserrat', Regular;
+  font-size: 16px;
+  text-indent: 22.28px;
+  font-weight: lighter;
+}
+
+ .ico-f {
+  font-size: 18px;
+  color:#102B52;
+  background-color: #E5F8FF;
+}
+
+button {
+  border-style:  none;
+}
+
+#filtro-green .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #102B52 1px solid;
+  height: 35px;
+  width: 470%;
+}
+
+.item{
+  display: flex;
+  justify-items: flex-end;
+  position: relative;
+
+  height: 3em;
+
+}
+
+
+select {
+  border:none;
+  background-color: #E5F8FF;
+  font-size: 13px;
+  font-family: 'Montserrat', Regular;
+  text-indent: 22.28px;
+  color:#102B52;
+
+
+}
+
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+option {
+  color:#102B52;
+  background-color: #E5F8FF;
+}
+input {
+  color: #fff;
+  font-size: 13px;
+  width: 10%;
+  padding: 5px 5px 5px;
+  background-color: #095d77;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+
+}
+label{margin-right: 15px;
+margin-left: 10px;}
+button{
+  color: #fff;
+  font-size: 13px;
+  width: 40%;
+  padding: 5px 3px 5px;
+  background-color: #095d77;
+  border: none;
+  border-radius: 4px;
+  margin-left:35px ;
+  margin-top: 5px;
+
+}
+
+/*tabela devolutiva*/
+
+.table-d {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 4px;
+  border-collapse: collapse;
+}
+
+th {
+  height: 32px;
+  font-family: 'Montserrat', SemiBold;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 14px;
+  color: #102B52;
+  background-color:  #E5DA77;
+}
+
+
+.td-d {
+  padding-left: 13px;
+  padding-right: 16px;
+  font-size: 14px;
+  font-family: 'Arial', Regular;
+  height: 55px;
+  background-color: #FFFFFF;
+  
+
+
+}
+
+tr, .tr-d , .tr-black {
+  border-bottom: solid 6px #F0F0F0;
+  table-layout: fixed;
+}
+
+.ico-td-circle {
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+/*-- Detalhes da tabela -- */
+
+.ico-red {
+  color: #D05446 ;
+
+}
+
+.ico-yellow {
+  color: #DBD41D;
+}
+
+.ico-green {
+  color: #00AC34 ;
+}
+
+.ico-white {
+  color:white;
+}
+
+.cor-span {
+  color:#FFE600;
+  font-weight: bold;
+}
+
+.tr-black td{
+  background-color: #303030;
+  color:#FFFFFF;
+  height: 56.5px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 700px) {
+/*área filtro azul*/
+  .dados-consulta{
+    font-size: 14px;
+  }
+  .dados-resposta{
+    font-size: 12px;
+  }
+
+  /*área filtro verde*/
+  h4{
+   font-size: 12px;
+   text-indent: 0px;
+  }
+
+  /*área tabela devolutivas*/
+  th {
+    font-size: 12px;
+    text-align:center;
+    text-indent: 0;
+  }
+}
+
+
+
+
+
+
+
+
+

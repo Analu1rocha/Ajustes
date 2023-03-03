@@ -1,0 +1,41 @@
+/*-- FONTES --*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/*-- Sessão azul --*/
+.tabela-azul {
+  background-color: #77C6E5;
+  width: 100%;
+  margin-top: 4px;
+  height: 104px;
+  text-align: center;
+  table-layout: fixed;
+}
+
+td {
+  padding-left: 14px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.dados-consulta {
+  color:#102B52;
+  font-family: 'Montserrat' , SemiBold;
+  font-weight: bold;
+}
+
+.dados-resposta {
+  font-family: 'Arial', Regular ;
+  color: #000000;
+}
+
+
+@media   (max-width:1000px) {
+
+  .dados-consulta {
+    font-size: 14px;
+  }
+
+  .dados-resposta {
+    font-size: 14px;
+  }
+}

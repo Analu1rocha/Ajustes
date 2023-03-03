@@ -1,0 +1,21 @@
+<header id="header">
+  <nav class="container-nav">
+
+  <div class="logo-nav">
+  <img src="../../../assets/SU_NovoLogo_Pinheiro_2022 (1).png" alt="Logo Seguros Unimed">
+  <h1><span class="nav-bold">Gerenciador de Fontes | </span>Relatório Unificado</h1>
+  </div>
+
+  <div id="menu">
+    <ul class="menu-nav">
+            <li><h1>Data e hora atualização: <span class="nav-bold">{{dataHoraAtu }}</span></h1></li>
+            <li><button  type="text" class="butons" data-tooltip="Mais" data-flow="top"><fa-icon [icon]="faEllipsisVertical" ></fa-icon></button></li>
+            <li><button type="text" class="butons"  data-tooltip="Exportar PDF" data-flow="top" (click)="openPDF()"> <fa-icon [icon]="faFileLines"></fa-icon></button></li>
+            <li><button  [cdkCopyToClipboard]= "copyUrl"  data-tooltip="Copiar" (click)="botaoClicado()" type="text" class="butons"  data-flow="top"><fa-icon [icon]="faLink" ></fa-icon><span *ngIf="mostrarMsg" class="Msgcopied">Copiado com sucesso!</span></button></li>
+            <li><button type="text" class="button-close"><fa-icon [icon]="faXmark" data-tooltip="Fechar" data-flow="top" ></fa-icon></button></li>
+    </ul>
+  </div>
+
+  </nav>
+
+</header>

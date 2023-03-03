@@ -1,0 +1,72 @@
+
+<!--Sessão verde-->
+<section id="filtro-green" >
+
+<div class="ls-custom-select">
+   <select class="item" (change)="filter($event);" [(ngModel)]="selectedFiltro">
+      <option [value]="'Todos'">Todos</option>
+      <option [value]="regra.codigoRetorno" *ngFor="let regra of dataSelect" >
+      {{regra.codigoRetorno}}
+      </option>
+    </select>
+
+
+</div>
+<div class="ls-custom-select">
+  <label for="name">
+    <span>Atributo 1:</span>
+  </label>
+´-  <input type="text" [(ngModel)]="filtroDigitado" >
+  <label for="name"   *ngIf="+selectedFiltro == 5 || +selectedFiltro == 55
+  || +selectedFiltro == 8 || +selectedFiltro == 10">
+    <span>Atributo 2:</span>
+  </label>
+  <input type="text" [(ngModel)]="filtroDigitado2" *ngIf="+selectedFiltro == 5 || +selectedFiltro == 55
+  || +selectedFiltro == 8 || +selectedFiltro == 10" >
+ <button type="button" (click)="filtrar()">Filtrar</button>
+</div>
+
+
+
+</section>
+
+<section id="table-devolutiva">
+
+<table class="table-d">
+
+<tr class="tr-d">
+  <th>Avaliação</th>
+  <th>Resultado da avaliação</th>
+
+</tr>
+
+<tr *ngFor="let regra of this.data.regras let i = index ">
+
+  <td class="td-d">{{i+1}} {{regra.nomeAmigavel}}</td>
+  <td class="td-d">
+    <fa-icon  class="ico-td-circle ico-red"
+    *ngIf="regra.semaforo === 'VERMELHO'"
+    [icon]="farCircleDot"></fa-icon>
+
+    <fa-icon  class="ico-td-circle ico-green"
+    *ngIf="regra.semaforo === 'VERDE'"
+    [icon]="farCircleDot"></fa-icon>
+
+    <fa-icon  class="ico-td-circle ico-yellow"
+    *ngIf="regra.semaforo === 'AMARELO'"
+    [icon]="farCircleDot"></fa-icon>
+
+    <fa-icon  class="ico-td-circle ico-white"
+    *ngIf="regra.semaforo === 'BRANCO'"
+    [icon]="farCircleDot"></fa-icon>
+
+    &nbsp;
+    {{regra.devolutiva}}
+  </td>
+  
+</tr>
+
+</table>
+</section>
+
+
